@@ -3,71 +3,65 @@
 Output assets/demo.gif
 
 Set Shell "bash"
-Set FontSize 14
-Set Width 1200
-Set Height 800
+Set FontSize 18
+Set Width 900
+Set Height 500
 Set Theme "Catppuccin Mocha"
+Set Padding 30
 
-Type "# Transcript to Proposal — Claude Code Skill"
+Hide
+Type "clear"
+Enter
+Show
+
+Sleep 500ms
+
+Type "# Transcript to Proposal"
+Sleep 100ms
+Enter
+Type "# Claude Code Skill"
+Enter
 Enter
 Sleep 1s
 
-Type "# Step 1: Start Claude Code and invoke the skill"
+Type "## You provide:"
 Enter
-Sleep 500ms
+Sleep 300ms
+Type "  📦 product.md    — what you sell"
+Enter
+Type "  🎙️ transcript    — client call recording"
+Enter
+Enter
+Sleep 1.5s
 
-Type "claude"
+Type "## Claude analyzes pains:"
+Enter
+Sleep 300ms
+Type "  🔴 Trigger: 'need demo by Friday'"
+Enter
+Type "  🟡 Active:  'digital doesn't work'"
+Enter
+Type "  🟢 Latent:  'complex setup'"
+Enter
+Enter
+Sleep 1.5s
+
+Type "## You confirm → Claude generates:"
+Enter
+Sleep 300ms
+Type "  📄 proposal.md     — using client's words"
+Enter
+Type "  📐 architecture.md — Mermaid diagrams"
+Enter
+Type "  🖥️ prototype.html  — clickable demo"
+Enter
 Enter
 Sleep 2s
 
-Type "/transcript-to-proposal"
+Type "## Result:"
+Enter
+Type "  Raw transcript → Professional proposal"
+Enter
+Type "  in one conversation"
 Enter
 Sleep 3s
-
-Type "# Claude asks for product description and transcript"
-Enter
-Sleep 2s
-
-Type "# Step 2: Provide inputs"
-Enter
-Sleep 500ms
-
-Type "Here's my product: MiracleOps - competitor monitoring service"
-Enter
-Sleep 1s
-
-Type "Here's the transcript: [paste client call]"
-Enter
-Sleep 2s
-
-Type "# Step 3: Claude analyzes pains"
-Enter
-Sleep 1s
-
-Type "# 🔴 TRIGGER: Need demo fast"
-Enter
-Type "# 🟡 Active: Can't prove digital works"
-Enter
-Type "# 🟢 Latent: Complex analytics setup"
-Enter
-Sleep 2s
-
-Type "# Step 4: Confirm and generate"
-Enter
-Sleep 500ms
-
-Type "yes, continue"
-Enter
-Sleep 3s
-
-Type "# Output: proposal.md + architecture.md + prototype.html"
-Enter
-Sleep 2s
-
-Type "open prototype.html"
-Enter
-Sleep 3s
-
-Type "# Done! Professional proposal from raw transcript"
-Enter
-Sleep 2s
