@@ -3,65 +3,64 @@
 Output assets/demo.gif
 
 Set Shell "bash"
-Set FontSize 18
-Set Width 900
-Set Height 500
+Set FontSize 20
+Set Width 800
+Set Height 450
 Set Theme "Catppuccin Mocha"
-Set Padding 30
+Set Padding 40
 
 Hide
 Type "clear"
 Enter
 Show
 
+Sleep 300ms
+
+Type "# TRANSCRIPT → PROPOSAL"
+Enter
+Sleep 800ms
+
+Type "# ─────────────────────────"
+Enter
+Enter
 Sleep 500ms
 
-Type "# Transcript to Proposal"
-Sleep 100ms
+Type "# INPUT:"
 Enter
-Type "# Claude Code Skill"
+Type "#   product.md + transcript.md"
 Enter
 Enter
 Sleep 1s
 
-Type "# You provide:"
+Type "# ANALYZE PAINS:"
 Enter
-Sleep 300ms
-Type "#   product.md    - what you sell"
+Type "#   TRIGGER → 'deadline March 15'"
 Enter
-Type "#   transcript.md - client call recording"
+Type "#   ACTIVE  → 'mechanisms failing'"
+Enter
+Type "#   LATENT  → 'dated design'"
 Enter
 Enter
-Sleep 1.5s
+Sleep 1s
 
-Type "# Claude analyzes pains:"
-Enter
-Sleep 300ms
-Type "#   TRIGGER: 'March 15 deadline, non-negotiable'"
-Enter
-Type "#   ACTIVE:  'mechanisms are failing constantly'"
-Enter
-Type "#   LATENT:  'dated design, looks like 2010'"
+Type "# CHECKPOINT: confirm priorities"
 Enter
 Enter
-Sleep 1.5s
+Sleep 800ms
 
-Type "# You confirm -> Claude generates:"
+Type "# GENERATE:"
 Enter
-Sleep 300ms
-Type "#   proposal.md     - using client's exact words"
+Type "#   proposal.md"
 Enter
-Type "#   architecture.md - Mermaid diagrams"
+Type "#   architecture.md"
 Enter
-Type "#   prototype.html  - clickable demo"
+Type "#   prototype.html"
 Enter
+Enter
+Sleep 1s
+
+Type "# ─────────────────────────"
+Enter
+Type "# Client words → Professional proposal"
 Enter
 Sleep 2s
-
-Type "# Result:"
-Enter
-Type "#   Raw transcript -> Professional proposal"
-Enter
-Type "#   in one conversation"
-Enter
-Sleep 3s
