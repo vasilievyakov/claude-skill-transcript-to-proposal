@@ -1,152 +1,169 @@
-# Коммерческое предложение для Алексея и команды
+# Commercial Proposal for Meridian Hotels
 
-## Резюме
+## Executive Summary
 
-• **Проблема:** Фарма не верит в digital-коммуникацию с врачами, потому что нет инструмента, который покажет реальную картину инфополя — где обсуждают, кто обсуждает, что говорят.
-
-• **Решение:** Демо-проект на примере гомеопатов — за 2-3 недели собираем данные, показываем разницу между UGC и профессиональным сообществом, убираем эхокамеры.
-
-• **Результат:** Готовый аргумент для фармы: "Вот где реально идёт дискуссия, вот что говорят, вот куда имеет смысл вкладываться — а не в порталы, куда приходят три с половиной коллеги".
+- **Problem:** Guest satisfaction dropped 8 points due to aging sofas, with $40K/month in repairs and a hard deadline for Chicago property refresh before April conference
+- **Solution:** 70-unit pilot using EasyRest sleeper sofas with commercial-grade fabrics, delivered and installed by March 15
+- **Result:** Modern, durable seating that eliminates mechanism failures, reduces housekeeping time, and positions Meridian as the design-forward brand you're building
 
 ---
 
-## Понимание ситуации
+## Understanding Your Situation
 
-Вы работаете с фарм-компаниями и видите одну и ту же проблему:
+Your Q4 satisfaction scores told a clear story: "room comfort dropped 8 points." Ten-year-old sofas are showing their age, and as Marcus put it, you're spending "$40K on repairs across properties" just to keep things functional. That's not sustainable.
 
-**Маркетологи фармы не понимают, где профессиональное сообщество читает, публикует и комментирует контент.** Они вкладывают деньги в собственные порталы, куда "приходят три с половиной коллеги, и это в большинстве случаев сотрудники".
+The sleeper sofas are the real pain point. Mechanisms jam, mattresses are thin, housekeeping loses "5 minutes to room turnover" per room fighting with the fold-out systems. Multiply that by hundreds of rooms and you're looking at serious operational drag.
 
-При этом **нет инструмента, который бы доказал, что digital-коммуникация с врачами реально влияет на выписку**. Цифровая коммуникация "достаточно сильно подвергается критике с точки зрения эффективности".
+You've tried the big contract suppliers. Williams & Hayes quoted 16-week lead times and 500-unit minimums. That doesn't work when you have the Midwest Healthcare Association arriving at Chicago in April and need 200 rooms looking fresh.
 
-Чтобы сломать эту картину мира, нужно **показать от обратного**: вот как сейчас выглядит инфополе без вашего вмешательства, вот где реально тусуется профессиональное сообщество, вот на что можно влиять.
-
-**Дополнительная сложность:** много эхокамер. "Один и тот же источник везде перепечатали, и кажется, что присутствия много, а на самом деле сигнал один." Нужна триангуляция.
-
-Вам нужна демка — быстро, понятно, чтобы можно было показать клиенту и понять: "можно ли это продавать".
-
----
-
-## Предлагаемое решение
-
-### Архитектура
-
-```mermaid
-graph TD
-    subgraph "Источники"
-        A1[Профессиональные порталы]
-        A2[Медицинские форумы]
-        A3[UGC — отзывы]
-        A4[Новости]
-        A5[Telegram-каналы]
-    end
-
-    subgraph "Обработка"
-        B[Сбор данных]
-        C[Дедупликация эхокамер]
-        D[Классификация: UGC vs Профи]
-        E[Анализ sentiment + тематики]
-    end
-
-    subgraph "Выходы"
-        F1[Дашборд инфополя]
-        F2[Алерты в Telegram]
-        F3[Еженедельный дайджест]
-    end
-
-    A1 --> B
-    A2 --> B
-    A3 --> B
-    A4 --> B
-    A5 --> B
-
-    B --> C --> D --> E
-
-    E --> F1
-    E --> F2
-    E --> F3
-```
-
-### Компоненты решения
-
-**Кастомные скраперы**
-- Что делает: собирает данные из всех релевантных источников — порталы врачей, форумы, UGC, новости, Telegram
-- Решает боль: "не всегда маркетологи понимают где профессиональное сообщество"
-
-**Дедупликация эхокамер**
-- Что делает: определяет первоисточник, отсекает перепечатки, показывает реальный охват
-- Решает боль: "кажется что присутствия много, а на самом деле сигнал один"
-
-**Классификация UGC vs Профессионалы**
-- Что делает: разделяет мнения пациентов и мнения врачей, показывает разницу
-- Решает боль: "авторитетные источники говорят одно, UGC говорит другое — сразу actionable insights"
-
-**Дашборд + Алерты**
-- Что делает: визуализация инфополя + уведомления о важных изменениях
-- Решает боль: нужно "представлять в соответствующем виде, чтобы было понятно что с этим делать"
+What you need is a partner who can:
+1. Hit the March 15 deadline — non-negotiable
+2. Let you pilot with 60-70 units before full commitment
+3. Solve the sleeper mechanism problem permanently
+4. Handle the old furniture so you're not storing 70 sofas somewhere
 
 ---
 
-## Этапы внедрения
+## Proposed Solution
 
-### Этап 1: Демо-проект на гомеопатах (2-3 недели)
+### Product Configuration
 
-**Что делаем:**
-- Созваниваемся с Аней, получаем вводные по проблематике
-- Маппим источники: где обсуждают гомеопатию в профессиональном сообществе
-- Собираем данные за последние 3-6 месяцев
-- Строим первую версию дашборда
+**For Suites (Sleeper Sofas):**
+- Model: Thornwood Meridian Series with EasyRest system
+- The mattress stores separately — no thin, uncomfortable fold-out mattress
+- Mechanism rated for 10,000+ cycles, zero jamming
+- 6" memory foam mattress, closet-stored
 
-**Результат:**
-- Демка, которую можно показать клиенту
-- Понимание: "можно ли это продавать"
-- Фактура для аргументации: где реально идёт дискуссия
+**For Standard Rooms:**
+- Model: Thornwood Metropolitan Series
+- Clean transitional design, customizable to your palette
+- High-density foam rated for 100,000+ compressions
 
-### Этап 2: Пилот с фарм-клиентом (4-6 недель)
+**Fabric Program:**
+- 3-4 base designs as David requested
+- Earth tones for mountain properties, cooler blues for coastal
+- All fabrics meet CAL 117-2013, tested at 100,000+ double rubs
+- Compatible with commercial cleaning chemicals
 
-**Что делаем:**
-- Расширяем на конкретный препарат/действующее вещество
-- Настраиваем регулярный мониторинг
-- Добавляем алерты и дайджесты
+### Why This Works
 
-**Результат:**
-- Работающий сервис для одного клиента
-- Кейс для продажи другим фарм-компаниям
-
-### Этап 3: Масштабирование
-
-**Что делаем:**
-- Тиражируем на рецептурную и безрецептурную фарму
-- Добавляем новые типы источников по запросу
-
----
-
-## Ожидаемые результаты
-
-| Проблема | Сейчас | После внедрения |
-|----------|--------|-----------------|
-| Где обсуждают тему | Не знают | Полная карта источников |
-| Эхокамеры | Искажают картину | Триангуляция, реальный охват |
-| UGC vs профессионалы | Смешано | Чёткое разделение |
-| Аргумент для фармы | "Digital не работает" | "Вот данные, вот где влиять" |
-| Время на анализ | Недели | Реальное время |
+| Your Concern | Our Solution |
+|--------------|--------------|
+| "Mechanisms are failing constantly" | EasyRest has no internal mattress storage — nothing to jam |
+| "Mattress is thin, guests complain" | Separate 6" memory foam mattress, real comfort |
+| "Adds 5 minutes to room turnover" | Simple fold-out, no fighting with springs |
+| "Need commercial-grade fabric" | All fabrics rated 100,000+ double rubs |
+| "Fire rating compliance" | CAL 117-2013 standard on everything |
+| "Can't wait 16 weeks" | Rush delivery: 6 weeks to installation |
 
 ---
 
-## Что НЕ входит в этот проект
+## Implementation Plan
 
-- Парсинг аптечных сетей (остатки, представленность) — отдельный проект, требует оценки
-- Анализ разговоров медпредов с врачами — отдельное направление
-- Влияние на выписку препаратов — это следующий уровень, сначала нужна база
+### Phase 1: Chicago Pilot (January - March 15)
+
+**Week 1-2: Design Finalization**
+- On-site visit to Chicago property
+- Final fabric selections with David's team
+- Sign-off on 3-4 base configurations
+
+**Week 3-6: Manufacturing**
+- Rush production (15% premium applied)
+- Quality inspection before shipping
+- Coordination with your facilities team on delivery windows
+
+**Week 7-8: Delivery & Installation**
+- White glove delivery with our Chicago team
+- Old sofa removal included — we haul away all 70 units
+- Installation and inspection, room by room
+- Final walkthrough with Sarah and David
+
+**Milestone: March 15 — all 70 units installed and inspected**
+
+### Phase 2: Full Rollout (Post-Conference Evaluation)
+
+After Chicago performs through the Midwest Healthcare Association conference:
+- Review guest feedback and housekeeping input
+- Finalize specifications for remaining 777 units
+- Phased rollout across 11 properties over 6-8 months
+- Volume pricing kicks in at full commitment
+
+### Phase 3: New Properties (2026)
+
+- Portland and Austin: 180 additional units
+- Same specifications, delivered to new property timelines
+- Preferred partner pricing locked in
 
 ---
 
-## Следующие шаги
+## Investment
 
-1. **Сегодня:** Алексей связывается с Аней, получает вводные по гомеопатам
-2. **Сегодня-завтра:** Передаёте нам проблематику, действующее вещество, ключевые вопросы
-3. **В течение 2-3 дней:** Мы оцениваем источники, говорим что можем сделать для демки
-4. **Пятница:** Встреча, показываем первую дымку
+### Chicago Pilot (70 Units)
+
+| Item | Quantity | Unit Price | Total |
+|------|----------|------------|-------|
+| EasyRest Sleeper Sofas | 35 | $2,400 | $84,000 |
+| Metropolitan Standard Sofas | 35 | $1,700 | $59,500 |
+| Rush Production Premium (15%) | — | — | $21,525 |
+| White Glove Delivery & Installation | — | Included | $0 |
+| Old Furniture Removal | 70 | Included | $0 |
+| **Chicago Pilot Total** | | | **$165,025** |
+
+*Per-unit average: $2,357 — within your $1,800-2,200 range for standard, premium justified by sleeper upgrades and rush timeline*
+
+### Payment Terms
+
+Understanding your Q1 cash flow constraints from the renovation project:
+
+- **30% on order confirmation:** $49,508
+- **70% on delivery:** $115,517
+
+*This is an exception to our standard 50/50 terms, offered based on the long-term partnership potential.*
+
+### Full Rollout Pricing (777 Units)
+
+At full commitment, volume discounts apply:
+- 15% discount at 100+ units
+- Estimated full rollout: $1.2-1.4M depending on sleeper/standard mix
+- Standard payment terms would apply
 
 ---
 
-*"Сегодня пришлёте — сегодня скажу что можем сделать на пятницу"*
+## Expected Outcomes
+
+| Metric | Current State | After Implementation |
+|--------|---------------|---------------------|
+| Guest comfort scores | Down 8 points | Target: +10 points |
+| Monthly repair costs | $40,000 | Near zero (lifetime frame warranty) |
+| Room turnover time | +5 min per sleeper room | Standard turnover |
+| Mechanism failures | "Constantly" | Zero (10K cycle rating) |
+| Design perception | "Dated, 2010" | Modern, design-forward |
+
+---
+
+## What's Not Included
+
+To be transparent about scope:
+
+- **Lobby furniture:** This proposal covers guest rooms only
+- **Leather options:** We focus on performance fabrics
+- **Ultra-modern/avant-garde designs:** Our strength is transitional aesthetics
+- **Properties outside pilot:** Full rollout quoted separately after Chicago success
+
+---
+
+## Next Steps
+
+1. **This week:** Confirm Chicago pilot scope and schedule design consultation
+2. **Week of Jan 20:** On-site visit with David to finalize fabrics and configurations
+3. **Jan 27:** Final quote and contract for signature
+4. **Feb 1:** Production begins
+5. **March 10-14:** Delivery and installation
+6. **March 15:** Chicago ready for conference
+
+---
+
+*"Hit that deadline, deliver on quality, and you'll have a long-term partner."*
+— Sarah Chen
+
+We intend to do exactly that.

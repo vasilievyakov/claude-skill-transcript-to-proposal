@@ -98,33 +98,49 @@ Then it walks you through the process with checkpoints.
 
 ## Example Output
 
+See the full example in [`examples/`](examples/):
+- [`transcript.md`](examples/transcript.md) — sales call with Meridian Hotels
+- [`product.md`](examples/product.md) — Thornwood Contract Furniture
+- [`proposal.md`](examples/proposal.md) — generated proposal
+- [`architecture.md`](examples/architecture.md) — solution architecture
+- [`prototype.html`](examples/prototype.html) — interactive dashboard
+
 ### Proposal excerpt
 
-> **Understanding the Situation**
+> **Understanding Your Situation**
 >
-> You're facing a classic data silo problem: "each department lives in their own Excel spreadsheet, and nobody sees the full picture." When leadership asks about route efficiency, it takes "two weeks to collect data from different systems." By then, competitors have already moved.
+> Your Q4 satisfaction scores told a clear story: "room comfort dropped 8 points." Ten-year-old sofas are showing their age, and as Marcus put it, you're spending "$40K on repairs across properties" just to keep things functional.
+>
+> The sleeper sofas are the real pain point. Mechanisms jam, mattresses are thin, housekeeping loses "5 minutes to room turnover" per room fighting with the fold-out systems.
 
 ### Architecture diagram
 
 ```mermaid
-graph TD
-    subgraph "Client Systems"
-        A[1C Accounting]
-        B[Dispatch System]
-        C[WMS]
+graph TB
+    subgraph "Client Requirements"
+        R1[847 Total Units]
+        R2[70 Unit Pilot]
+        R3[March 15 Deadline]
     end
 
-    subgraph "Our Solution"
-        D[Integration Layer]
-        E[Analytics Engine]
-        F[Executive Dashboard]
+    subgraph "Product Configuration"
+        P1[EasyRest Sleeper Sofas]
+        P2[Metropolitan Standard]
+        P3[Fabric Program]
     end
 
-    A --> D
-    B --> D
-    C --> D
-    D --> E
-    E --> F
+    subgraph "Manufacturing"
+        M1[Rush Production]
+        M2[Quality Control]
+        M3[Fire Compliance]
+    end
+
+    R2 --> P1
+    R2 --> P2
+    P1 --> M1
+    P2 --> M1
+    M1 --> M2
+    M2 --> M3
 ```
 
 ### Prototype screenshot

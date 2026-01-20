@@ -27,9 +27,9 @@ Sleep 1s
 Type "## You provide:"
 Enter
 Sleep 300ms
-Type "  📦 product.md    — what you sell"
+Type "  product.md    - what you sell"
 Enter
-Type "  🎙️ transcript    — client call recording"
+Type "  transcript.md - client call recording"
 Enter
 Enter
 Sleep 1.5s
@@ -37,30 +37,30 @@ Sleep 1.5s
 Type "## Claude analyzes pains:"
 Enter
 Sleep 300ms
-Type "  🔴 Trigger: 'need demo by Friday'"
+Type "  TRIGGER: 'March 15 deadline, non-negotiable'"
 Enter
-Type "  🟡 Active:  'digital doesn't work'"
+Type "  ACTIVE:  'mechanisms are failing constantly'"
 Enter
-Type "  🟢 Latent:  'complex setup'"
+Type "  LATENT:  'dated design, looks like 2010'"
 Enter
 Enter
 Sleep 1.5s
 
-Type "## You confirm → Claude generates:"
+Type "## You confirm -> Claude generates:"
 Enter
 Sleep 300ms
-Type "  📄 proposal.md     — using client's words"
+Type "  proposal.md     - using client's exact words"
 Enter
-Type "  📐 architecture.md — Mermaid diagrams"
+Type "  architecture.md - Mermaid diagrams"
 Enter
-Type "  🖥️ prototype.html  — clickable demo"
+Type "  prototype.html  - clickable demo"
 Enter
 Enter
 Sleep 2s
 
 Type "## Result:"
 Enter
-Type "  Raw transcript → Professional proposal"
+Type "  Raw transcript -> Professional proposal"
 Enter
 Type "  in one conversation"
 Enter
