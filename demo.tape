@@ -24,44 +24,44 @@ Enter
 Enter
 Sleep 1s
 
-Type "## You provide:"
+Type "# You provide:"
 Enter
 Sleep 300ms
-Type "  product.md    - what you sell"
+Type "#   product.md    - what you sell"
 Enter
-Type "  transcript.md - client call recording"
+Type "#   transcript.md - client call recording"
 Enter
 Enter
 Sleep 1.5s
 
-Type "## Claude analyzes pains:"
+Type "# Claude analyzes pains:"
 Enter
 Sleep 300ms
-Type "  TRIGGER: 'March 15 deadline, non-negotiable'"
+Type "#   TRIGGER: 'March 15 deadline, non-negotiable'"
 Enter
-Type "  ACTIVE:  'mechanisms are failing constantly'"
+Type "#   ACTIVE:  'mechanisms are failing constantly'"
 Enter
-Type "  LATENT:  'dated design, looks like 2010'"
+Type "#   LATENT:  'dated design, looks like 2010'"
 Enter
 Enter
 Sleep 1.5s
 
-Type "## You confirm -> Claude generates:"
+Type "# You confirm -> Claude generates:"
 Enter
 Sleep 300ms
-Type "  proposal.md     - using client's exact words"
+Type "#   proposal.md     - using client's exact words"
 Enter
-Type "  architecture.md - Mermaid diagrams"
+Type "#   architecture.md - Mermaid diagrams"
 Enter
-Type "  prototype.html  - clickable demo"
+Type "#   prototype.html  - clickable demo"
 Enter
 Enter
 Sleep 2s
 
-Type "## Result:"
+Type "# Result:"
 Enter
-Type "  Raw transcript -> Professional proposal"
+Type "#   Raw transcript -> Professional proposal"
 Enter
-Type "  in one conversation"
+Type "#   in one conversation"
 Enter
 Sleep 3s
